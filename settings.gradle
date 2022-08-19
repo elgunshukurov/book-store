@@ -1,0 +1,3 @@
+rootProject.name = 'book-store'
+
+include 'bs-library' //, 'bs-user-management'
