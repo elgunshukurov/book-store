@@ -1,4 +1,4 @@
-This Website is built for following purpose:-
+### This Website is built for following purpose:-
 
 For Demonstrate books online.
 Getting detailed informations about books.
@@ -26,26 +26,27 @@ Users Have Following Access for this online library site:-
 
 View Available Books.
 
-Technologies used:-
-Back-End Development
-Java [JDK 8+]
-Spring (Boot/Data/Security)
-JPA
-JWT
-Docker
-MapStruct
+### Technologies used:-
+- Back-End Development
+- Java [JDK 8+]
+- Spring (Boot/Data/Security)
+- JPA
+- JWT
+- Docker
+- MapStruct
 
 Database used.
-MySql
+- MySql
 
-==== Software And Tools Required ====
-MySQL
-Intellij IDEA
-Java [JDK 8+]
-Tomcat v8.0+
-Gradle
+### ==== Software And Tools Required ====
+- MySQL
+- Intellij IDEA
+- Java [JDK 8+]
+- Tomcat v8.0+
+- Gradle
 
-=============== Dummy Database Initialization =====================
+### =============== Dummy Database Initialization =====================
+
 STEP 1: Open MySQL Command Prompt or MySQL Workbench or just Data Source
 
 STEP 2: Login to the administrator user as : mysql -u <username> -p (Enter Password if asked)
@@ -53,7 +54,7 @@ STEP 2: Login to the administrator user as : mysql -u <username> -p (Enter Passw
 STEP 3 :Copy paste the following MySql Commands:
 
 Note: Default tables will be create via JPA.
-
+```MySQL
 -- user-role datas
 insert into role values (1,'ROLE_ADMIN');
 insert into role values (2,'ROLE_PUBLISHER');
@@ -89,9 +90,9 @@ insert into publisher (id, country, name) values (18,'England','British Library 
 insert into publisher (id, country, name) values (22,'UK','Puffin Books');
 insert into publisher (id, country, name) values (24,'RF','Azbuka');
 insert into publisher (id, country, name) values (26,'AZE','Teas-Press');
+```
 
 
-
-"Suggestions and project Improvements are Invited!"
-Thanks a lot
-Elgun Shukurov
+"Suggestions and project Improvements are Invited!"<br/>
+Thanks a lot<br/>
+<b>Elgun Shukurov</b>
