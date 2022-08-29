@@ -6,27 +6,27 @@ Adding and managing books and publishers.
 User Friendly.
 This is a Mini-project developed using Java, Jdbc.
 
-Admin Have Following Access for this online store site:-
+Admin Have Following Access for this online store site:
 
-Add New Books and Publishers.
-Update New Books and Publishers.
-Add Books to spesific Publishers.
-View Books and Publishers Available.
-Remove Books and Publishers.
+- Add New Books and Publishers.
+- Update New Books and Publishers.
+- Add Books to spesific Publishers.
+- View Books and Publishers Available.
+- Remove Books and Publishers.
 
-Publishers Have Following Access for this online library site:-
+Publishers Have Following Access for this online library site:
 
-Create New Account or Register.
-Add New Books.
-Update Books.
-View Books Available.
-Remove Books.
+- Create New Account or Register.
+- Add New Books.
+- Update Books.
+- View Books Available.
+- Remove Books.
 
-Users Have Following Access for this online library site:-
+Users Have Following Access for this online library site:
 
-View Available Books.
+- View Available Books.
 
-### Technologies used:-
+### Technologies used:
 - Back-End Development
 - Java [JDK 8+]
 - Spring (Boot/Data/Security)
