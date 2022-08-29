@@ -1,3 +1,5 @@
+# Book Store
+
 ### This Website is built for following purpose:
 
 For Demonstrate books online.
@@ -14,7 +16,7 @@ Admin Have Following Access for this online store site:
 - View Books and Publishers Available.
 - Remove Books and Publishers.
 
-Publishers Have Following Access for this online library site:
+Publishers Have Following Access for this online book store site:
 
 - Create New Account or Register.
 - Add New Books.
@@ -67,7 +69,8 @@ insert into  user values (3, 'John','$2a$10$Tvcbmk05q.e3Z9rmv0QDOOxbjWT3BPep4sYV
 insert into user_roles values (1, 1);
 insert into user_roles values (2, 2);
 insert into user_roles values (3, 3);
-
+```
+```MySQL
 -- dummy datas for publishers and books
 insert into books (id, author, isbn, title, publisher_id) values (2,'J. K. Rowling','0-7475-3269-9','Harry Potter and the Philosophers Stone',1);
 insert into books (id, author, isbn, title, publisher_id) values (4,'J. R. R. Tolkien','0-6182-6030-7','The Hobbit',3);
@@ -90,6 +93,15 @@ insert into publisher (id, country, name) values (18,'England','British Library 
 insert into publisher (id, country, name) values (22,'UK','Puffin Books');
 insert into publisher (id, country, name) values (24,'RF','Azbuka');
 insert into publisher (id, country, name) values (26,'AZE','Teas-Press');
+```
+## Help
+
+For build project from an image:
+```
+docker pull elgunsh/bs-library:latest
+ ```
+ ```
+docker run elgunsh/bs-library:latest
 ```
 
 
