@@ -1,4 +1,4 @@
-### This Website is built for following purpose:-
+### This Website is built for following purpose:
 
 For Demonstrate books online.
 Getting detailed informations about books.
