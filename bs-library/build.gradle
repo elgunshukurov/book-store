@@ -27,7 +27,6 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'com.auth0:java-jwt:3.19.2'
     implementation "org.mapstruct:mapstruct:1.4.2.Final"
-    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
 
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'mysql:mysql-connector-java'
@@ -35,8 +34,4 @@ dependencies {
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
-}
-
-tasks.named('test') {
-    useJUnitPlatform()
 }

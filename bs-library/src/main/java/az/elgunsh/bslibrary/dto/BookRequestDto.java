@@ -7,9 +7,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class BookRequestDto {
     private Long id;
-    private String title;
-    private String pubName;
-    private String pubCountry;
     private String author;
     private String isbn;
+    private String title;
+    private Long pubId;
 }

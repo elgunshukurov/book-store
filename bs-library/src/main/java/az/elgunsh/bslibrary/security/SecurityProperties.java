@@ -19,6 +19,8 @@ public class SecurityProperties {
     @Setter
     public static class JwtProperties {
 
+//        @Value("${security.jwtProperties.secret}")
+//        private String secret;
         private String secret = "VGhpcyBteSBzZWNyZXQga2V5IGZvciBBcHBsaWNhdGlvbi4gUGxlYXNlIGNoYW5nZSBpbiBwcm9kdWN0aW9uLg==";
         private long tokenValidityInSeconds;
         private long tokenValidityInSecondsForRememberMe;

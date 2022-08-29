@@ -4,8 +4,12 @@ import az.elgunsh.bslibrary.dao.security.User;
 import az.elgunsh.bslibrary.service.UserService;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -14,7 +18,6 @@ import java.util.List;
 public class UserController {
     private final UserService userService;
 
-//    @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
     @GetMapping
     public List<User> list(){
         return userService.list();
@@ -25,7 +28,6 @@ public class UserController {
         return userService.save(user);
     }
 
-    // qismen update eleyirikse patch yaza bilerik
     @PatchMapping
     public void addRole(@RequestBody AddRolesRequest request){
         userService.addRoleTo(request.getUsername(), request.getRoleName());

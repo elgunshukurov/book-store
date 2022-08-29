@@ -54,7 +54,7 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 withSubject(user.getUsername()).
                 withIssuer(request.getRequestURL().toString()).
                 withExpiresAt(Date.from(Instant.now().plus(1, ChronoUnit.DAYS))).
-                withClaim("roles",user.getAuthorities().stream().map(GrantedAuthority::getAuthority)
+                withClaim("roles", user.getAuthorities().stream().map(GrantedAuthority::getAuthority)
                         .collect(Collectors.toList())).
                 sign(algorithm);
 
@@ -62,7 +62,7 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 withSubject(user.getUsername()).
                 withIssuer(request.getRequestURL().toString()).
                 withExpiresAt(Date.from(Instant.now().plus(3, ChronoUnit.DAYS))).
-                withClaim("roles",user.getAuthorities().stream().map(GrantedAuthority::getAuthority).collect(Collectors.toList())).
+                withClaim("roles", user.getAuthorities().stream().map(GrantedAuthority::getAuthority).collect(Collectors.toList())).
                 sign(algorithm);
 
         response.setContentType(MediaType.APPLICATION_JSON_VALUE);

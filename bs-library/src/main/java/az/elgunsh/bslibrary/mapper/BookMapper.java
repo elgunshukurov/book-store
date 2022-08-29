@@ -1,7 +1,6 @@
 package az.elgunsh.bslibrary.mapper;
 
 import az.elgunsh.bslibrary.dao.Book;
-import az.elgunsh.bslibrary.dto.BookDto;
 import az.elgunsh.bslibrary.dto.BookRequestDto;
 import az.elgunsh.bslibrary.dto.BookResponseDto;
 import org.mapstruct.Mapper;
@@ -19,16 +18,14 @@ public interface BookMapper {
 
     @Mappings(
             value = {
-                    @Mapping(source = "pubName", target = "publisher.name"),
-                    @Mapping(source = "pubCountry", target = "publisher.country")
+                    @Mapping(source = "pubId", target = "publisher.id"),
             }
     )
     Book toEntity(BookRequestDto source);
 
     @Mappings(
             value = {
-                    @Mapping(source = "pubName", target = "publisher.name"),
-                    @Mapping(source = "pubCountry", target = "publisher.country")
+                    @Mapping(source = "pubId", target = "publisher.id"),
             }
     )
     List<Book> toEntity(List<BookRequestDto> source);
