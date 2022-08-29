@@ -1,16 +1,16 @@
 package az.elgunsh.bslibrary.dto;
 
-import lombok.*;
+import az.elgunsh.bslibrary.dao.Book;
+import lombok.Data;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Data
 @Component
-public class PublisherDto {
-
+public class PublisherRequestDto {
     private Long id;
     private String name;
     private String country;
-    private List<BookDto> books;
+    private List<Book> books;
 }

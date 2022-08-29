@@ -1,0 +1,3 @@
+<module name="SuppressionFilter">
+    <property name="file" value="config/checkstyle/suppressions.xml"/>
+</module>

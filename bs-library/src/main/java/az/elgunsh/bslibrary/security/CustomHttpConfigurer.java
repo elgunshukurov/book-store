@@ -11,6 +11,7 @@ public class CustomHttpConfigurer extends AbstractHttpConfigurer<CustomHttpConfi
 
     @Override
     public void init(HttpSecurity builder) throws Exception {
+        // app run olanda ishleyir
         builder.cors().and().csrf().disable().
                 authorizeRequests(auth -> {
                     auth.anyRequest().authenticated(); // gelen butun requestleri authorise edir
@@ -25,8 +26,7 @@ public class CustomHttpConfigurer extends AbstractHttpConfigurer<CustomHttpConfi
         AuthenticationManager authenticationManager = http.getSharedObject(AuthenticationManager.class);
         http.
                 addFilter(new JwtAuthenticationFilter(authenticationManager)).
-                addFilterBefore(new JwtTokenFilter(), UsernamePasswordAuthenticationFilter.class)
-        ;
+                addFilterBefore(new JwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
     }
 
     public static CustomHttpConfigurer customDsl(){

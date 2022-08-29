@@ -1,6 +1,6 @@
 package az.elgunsh.bslibrary.dto;
 
-import lombok.*;
+import lombok.Data;
 import org.springframework.stereotype.Component;
 
 @Data
